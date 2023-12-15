@@ -1,7 +1,7 @@
 
 import Navbar from './components/Navbar';
 import Search from './components/SearchBar'
-import OrdersList from './views/orders';
+import OrdersList from './views/Orders';
 
 const App = () => {
   
