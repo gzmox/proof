@@ -1,0 +1,261 @@
+#root {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #0e0e0e;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+
+  /* ------------------------------------------------------------------------------- */
+
+ /* Estilos para pantallas grandes */
+ .navbar {
+  background-color: #33333300;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  display: block;
+  color: gray;
+  text-decoration: none;
+  padding: 14px 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.navbar a:after {
+content: "";
+display: block;
+height: 2px;
+width: 0;
+background-color: rgb(232, 255, 28);
+transition: width 0.3s;
+}
+
+.navbar a:hover:after,
+.navbar a:focus:after {
+  width: 60%;
+  color: yellow;
+}
+
+.notification{
+  color: yellow;
+}
+
+.icon,
+.notification {
+font-size: 30px;
+transition: font-size 0.3s;
+}
+
+.icon:hover,
+.notification:hover {
+color: yellow;
+transform: scale(1.1);
+}
+
+.up{
+
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+.search-bar {
+  overflow: hidden;
+  margin: 50px;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+
+}
+
+input {
+  padding: 9px;
+  margin-right: 8px;
+  outline: none;
+  border:none;
+  border-radius: 4px;
+  outline: none;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid gray;
+}
+
+button {
+  padding: 10px;
+  background-color: #47474781;
+  color: white;
+  border: 1px;
+  border-color: gray;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+div.orders-list{
+  display: flex;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width:750px) {
+  .order {
+    display: inline-block;
+    width: 80%;
+  
+  }
+}
+
+.order{
+  width: 30%;
+  height: 40%;
+  margin: 20px;
+}
+.cardContainer{
+  width: 20%;
+  height: 20%;
+  position: relative;
+}
+
+.card{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(24, 24, 24); 
+
+}
+
+
+
+.cardHeader{
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #ddd;
+  margin:0;
+}
+
+.cardBody{
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.destination{
+  
+}
+
+.nicknameDes,
+.locationDes,
+.timeDes,
+.dateDes,
+.dataDes{
+  display: flex;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+h5,
+p{
+  width: 40%;
+  position: relative;
+}
+
+.datetime{
+  position: relative;
+  top: 10px;
+  left:50px;
+}
+
+.city,
+.address{
+  width: 80%;
+  text-align: start;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 40px;
+}
+
+.address{
+  font-size: 10px;
+}
+
+.timeDes,
+.dateDes{
+  width: 20%;
+  font-size: 10px;
+}
+
+.orderNumber{
+  width: 100%;
+  text-align: start;
+  margin-left: 20px;
+}
+
+.buttonResume{
+  background-color: yellow;
+  color: black;
+  border-radius: 8px;
+  width: 40%;
+}
+
+.cardFoother{
+  margin: 0px, 0px, 500px, 50px;
+  display: flex;
+}
+
+#resume,
+#pickup{
+  width: 50%;
+  margin-top: 20px;
+
+}
+
+#resume{
+  background-color: yellow;
+  color: black;
+}
+
+#pickup{
+  background-color: #0e0e0edc;
+  font-size: 10px;
+  text-align: start;
+}
